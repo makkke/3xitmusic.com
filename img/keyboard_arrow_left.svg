@@ -1,0 +1,12 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+ <title>keyboard_arrow_right</title>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(179.691162109375 11.97531509399414,12.024219512939453) " stroke="null" id="svg_1" d="m4.731942,21.183685l8.986242,-9.159466l-8.986242,-9.159466l2.750252,-2.803267l11.736493,11.962733l-11.736493,11.962733l-2.750252,-2.803267z" fill="white"/>
+ </g>
+</svg>
