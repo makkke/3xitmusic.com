@@ -2016,7 +2016,8 @@
 
             performHorizontalMove(slides, v, true);
 
-            if(v.slideIndex != 0) {
+            if(v.slideIndex != 0 && v.slideIndex != v.prevSlideIndex) {
+              console.log('v', v)
               var i = v.slideIndex - 1
               var player = players[i]
               player.stopVideo()

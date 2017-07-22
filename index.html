@@ -26,17 +26,16 @@
 		<div id="fullpage">
 			<div class="section" id="section1">
 				<div class="slide" id="slide1" data-anchor="slide1">
-					<video class="intro" autoplay>
+					<video id="intro" class="intro" autoplay onclick="playPauseIntro()">
 						<source src="./videos/intro.mp4" type="video/mp4">
 					</video>
 				</div>
 			  <div class="slide" id="slide2" data-anchor="slide2">
-					<img id="image2" class="videoImage" src="./img/william.png" onClick="startVideo(2, players[0])">
+					<div id="image2" class="videoControl" onClick="startVideo(2, players[0])">
+						<img class="videoImage" src="./img/William.jpg">
+						<img class="videoPlay" src="./img/play.svg">
+					</div>
 					<div id="video2" class="video" style="display: none" data-video-id="RaAKfzcU_xo"> </div>
-				</div>
-			  <div class="slide" id="slide3" data-anchor="slide3">
-					<img id="image3" class="videoImage" src="./img/william.png" onClick="startVideo(3, players[1])">
-					<div id="video3" class="video" style="display: none" data-video-id="RaAKfzcU_xo"> </div>
 				</div>
 			</div>
 			<div class="social-icons">

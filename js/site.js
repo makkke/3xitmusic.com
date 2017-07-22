@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     slidesNavigation: true,
     afterRender: function () {
-      $('video').get(0).play();
+      $('#intro').get(0).play();
     }
   });
   videoIds = $(".video")
@@ -43,5 +43,13 @@ function swap(index, showImage) {
     image.css('display','none')
     video.css('display','block')
   }
+}
 
+function playPauseIntro() {
+  var intro = $('#intro').get(0)
+  if (!intro.paused) {
+    intro.pause()
+  } else {
+    intro.play()
+  }
 }
