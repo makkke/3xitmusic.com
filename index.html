@@ -19,6 +19,7 @@
 		<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="./js/fullPage.js"></script>
 		<script type="text/javascript" src="./js/site.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
 	</head>
 
 	<body>
@@ -30,22 +31,19 @@
 					</video>
 				</div>
 			  <div class="slide" id="slide2" data-anchor="slide2">
-					<iframe class="video" src="https://www.youtube.com/embed/RaAKfzcU_xo" frameborder="0" allowfullscreen data-autoplay></iframe>
+					<img id="image2" class="videoImage" src="./img/william.png" onClick="startVideo(2, players[0])">
+					<div id="video2" class="video" style="display: none" data-video-id="RaAKfzcU_xo"> </div>
 				</div>
-				<div class="slide" id="slide3" data-anchor="slide3">
-					<iframe class="video" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allowfullscreen data-autoplay></iframe>
-				</div>
-				<div class="slide" id="slide3" data-anchor="slide3">
-					<iframe class="video" src="https://www.youtube.com/embed/dISNgvVpWlo" frameborder="0" allowfullscreen data-autoplay></iframe>
-				</div>
-				<div class="slide" id="slide3" data-anchor="slide3">
-					<iframe class="video" src="https://www.youtube.com/embed/9pdj4iJD08s" frameborder="0" allowfullscreen data-autoplay></iframe>
+			  <div class="slide" id="slide3" data-anchor="slide3">
+					<img id="image3" class="videoImage" src="./img/william.png" onClick="startVideo(3, players[1])">
+					<div id="video3" class="video" style="display: none" data-video-id="RaAKfzcU_xo"> </div>
 				</div>
 			</div>
 			<div class="social-icons">
-				<img class="icon" src="./img/facebook.svg">
-				<img class="icon" src="./img/twitter.svg">
-				<img class="icon" src="./img/google.svg">
+				<img onclick="window.open('https://www.facebook.com/3XITmusic/')" class="icon" src="./img/facebook.svg">
+				<img onclick="window.open('https://twitter.com/3xitMusic')" class="icon" src="./img/twitter.svg">
+				<img onclick="window.open('https://soundcloud.com/3xitmusic')" class="icon" src="./img/soundcloud.svg">
+				<img onclick="window.open('https://www.youtube.com/channel/UCPmX5ZrtqpddGgH4wNLXnRw')" class="icon" src="./img/youtube.svg">
 			</div>
 		</div>
 	</body>
