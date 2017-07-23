@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: /3xitmusic.com
+    docker:
+      - image: makkke/node
+    steps:
+      - checkout
+
+      - run:
+          name: Deploy to production
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              aws s3 sync ./ s3://3xitmusic.com/ --delete
+            fi
