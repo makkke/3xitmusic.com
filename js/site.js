@@ -8,7 +8,6 @@ $(document).ready(function() {
     }
   });
   videoIds = $(".video")
-  console.log('videoIds', videoIds)
   onYouTubeIframeAPIReady = function() {
     for(var i = 0; i < videoIds.length; i++) {
       var video = videoIds[i]
