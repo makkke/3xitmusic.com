@@ -16,16 +16,11 @@ h1{
   background-color: black !important;
   color: white;
 }
-/* Overwriting styles for the navigation dots (to place it where we want)
-* --------------------------------------- */
-.fp-slidesNav.bottom{
-	bottom: 10px;
-}
 
 .video {
   width: 100%;
   height: 100%;
-  padding: 0 50px 60px 50px;
+  padding: 0 0 60px 0;
   box-sizing: border-box;
 }
 
@@ -68,14 +63,6 @@ h1{
 	max-width: 100vw;
   max-height: 100vh;
 	position: relative;
-}
-
-
-.social-icons {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999999999999;
 }
 
 .icon {
@@ -121,4 +108,31 @@ h1{
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.fp-slidesNav.bottom {
+	bottom: 10px;
+}
+.social-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .fp-slidesNav.bottom {
+    bottom: 50px;
+  }
+	.social-icons {
+	  position: absolute;
+	  bottom: 10px;
+		margin-left: -84px;
+		left: 50%;
+	}
+	.video {
+	  width: 100%;
+	  height: 100%;
+	  padding: 0 0 90px 0;
+	  box-sizing: border-box;
+	}
 }
