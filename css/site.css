@@ -122,13 +122,3 @@ h1{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.fp-slidesNav a > span {
-	opacity: 0.4;
-  background-color: white;
-  -moz-transition: all 200ms;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-}
-.fp-slidesNav a > span  {
-  opacity: 0.9;
-}
