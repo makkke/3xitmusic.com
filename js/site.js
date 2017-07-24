@@ -41,6 +41,7 @@ $(document).ready(function() {
   console.log('isMobile.any()', isMobile.any())
   if (isMobile.any()) {
     mobileIntro(true)
+    $('#intro').remove()
   }
 });
 
@@ -85,8 +86,10 @@ function mobileIntro(showImage) {
     image.css('display','block')
     intro.css('display','none')
   } else {
-    image.css('display','none')
-    intro.css('display','block')
-    intro.get(0).play()
+    if (!mobile.any()) {
+      image.css('display','none')
+      intro.css('display','block')
+      intro.get(0).play()
+    }
   }
 }

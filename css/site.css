@@ -119,6 +119,11 @@ h1{
   right: 10px;
   z-index: 10;
 }
+
+#introImage {
+	margin: auto;
+}
+
 @media (max-width: 768px) {
   .fp-slidesNav.bottom {
     bottom: 50px;
