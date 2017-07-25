@@ -38,11 +38,12 @@ $(document).ready(function() {
       players.push(player)
     }
   }
-  console.log('isMobile.any()', isMobile.any())
+
   if (isMobile.any()) {
     mobileIntro(true)
     $('#intro').remove()
   }
+
 });
 
 function stopVideo(index) {
@@ -77,6 +78,13 @@ function playPauseIntro() {
   } else {
     intro.play()
   }
+}
+
+function replaceIntro() {
+  const video = $('#intro')
+  video.attr('src', './videos/intro2.mp4')
+  video.loop = true;
+  video.load();
 }
 
 function mobileIntro(showImage) {
