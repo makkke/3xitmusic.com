@@ -80,13 +80,6 @@ function playPauseIntro() {
   }
 }
 
-function replaceIntro() {
-  const video = $('#intro')
-  video.attr('src', './videos/intro2.mp4')
-  video.attr('loop', true)
-  video.load()
-}
-
 function mobileIntro(showImage) {
   var image = $('#introImage')
   var intro = $('#intro')
