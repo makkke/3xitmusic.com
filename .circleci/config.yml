@@ -12,5 +12,5 @@ jobs:
           name: Deploy to production
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              aws s3 sync ./ s3://3xitmusic.com/ --delete
+              aws s3 sync ./ s3://dj3xit.com/ --delete
             fi
